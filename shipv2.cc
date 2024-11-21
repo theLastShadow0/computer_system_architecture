@@ -87,7 +87,7 @@ void CACHE::update_replacement_state(uint32_t triggering_cpu, uint32_t set, uint
       ::rrpv_values[this][set * NUM_WAY + way] = ::maxRRPV - 1; //if there's a miss the next cache line will be set to 2
 	}
 	else{
-	::rrpv_values[this][set * NUM_WAY + way] = 0; // if there's a cache hit the its set to 0
+	::rrpv_values[this][set * NUM_WAY + way] = 0; // if there's a cache hit its set to 0
 	}
 
     return;
