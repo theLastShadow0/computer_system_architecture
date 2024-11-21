@@ -84,10 +84,10 @@ void CACHE::update_replacement_state(uint32_t triggering_cpu, uint32_t set, uint
   // handle writeback access
   if (access_type{type} == access_type::WRITE) {
     if (!hit){
-      ::rrpv_values[this][set * NUM_WAY + way] = ::maxRRPV - 1; //if there's a miss it reduces the re-reference value by -1
+      ::rrpv_values[this][set * NUM_WAY + way] = ::maxRRPV - 1; //if there's a miss the next cache line will be set to 2
 	}
 	else{
-	::rrpv_values[this][set * NUM_WAY + way] = 0; // if there's a cache hit the re-reference value is set to 0
+	::rrpv_values[this][set * NUM_WAY + way] = 0; // if there's a cache hit the its set to 0
 	}
 
     return;
