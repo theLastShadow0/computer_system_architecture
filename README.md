@@ -10,3 +10,11 @@ This coming Monday you are responsible to show some progress on the implementati
     Create a new .cc file where you will copy over the code found in lru/lru.cc. Make sure both name for the directory and file match
     Replace the code in the two main functions to match your idea.
     To test your code (not necessary for Monday) you need to modify the .json file and replace lru with the name of your policy as the replacement policy for the LLC
+
+Include:
+
+
+    Detail explanation on how your policy differs from the original policy you use.
+    Use diagrams to explain the functionality of your policy results
+    You will run 3 experiments per policy (6 total) 3 with LRU, 3 with your policy and graph the results according the the IPC metric.
+    If your code is different from what you submit earlier, attach it as well.
